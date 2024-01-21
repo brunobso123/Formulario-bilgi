@@ -1,30 +1,15 @@
-# React + TypeScript + Vite
+O projeto é composto por Javascript e 2 frameworks (React, typeScript) e estruturado com HTML5 e CSS3.
+Contendo 3 páginas, sendo elas: uma página de login, uma de cadastro do usuário e uma de recuperação de senha.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Página de Login:
+1. Caso o usuário já possua cadastro, ele terá dois campos para preenchimento: E-mail e Senha.
+2. Caso o usuário não possua cadastro, haverá um campo denominado "Cadastre-se" que automaticamente o direciona para a  página de cadastro.
 
-Currently, two official plugins are available:
+Página de Cadastro:
+1. Caso o usuário for realizar o cadastro, a página contém os seguintes campos para preenchimento: Nome, E-mail, Senha e Confirmar Senha.
+2. Se o usuário colocar um e-mail inválido, o campo vai gerar uma mensagem de erro, especificando o que não está correto. 
+3. No momento de cadastrar a senha, se caso a senha e a confirmação de senha não forem iguais, o campo vai gerar uma mensagem de erro.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Página de Recuperação de Senha: 
+1. A página contém um campo para o cliente colocar um e-mail já cadastrado, e um botão que quando selecionado, enviará um token diretamente ao e-mail do usuário
+especificado no campo para que ele possa realizar a recuperação da senha. (no caso o token enviado, o Back-End é responsável).
