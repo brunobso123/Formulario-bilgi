@@ -12,4 +12,4 @@ Página de Cadastro:
 
 Página de Recuperação de Senha: 
 1. A página contém um campo para o cliente colocar um e-mail já cadastrado, e um botão que quando selecionado, enviará um token diretamente ao e-mail do usuário
-especificado no campo para que ele possa realizar a recuperação da senha. (no caso o token enviado, o Back End é responsável).
+especificado no campo para que ele possa realizar a recuperação da senha. (no caso o token enviado, o Back-End é responsável).
