@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import jpIMG from "../../assets/logo.png";
 import { LayoutComponents } from "../../components/LayoutComponents";
+
+import jpIMG from "../../assets/logo.png";
 
 export const Recover = () => {
   const [email, setEmail] = useState("");

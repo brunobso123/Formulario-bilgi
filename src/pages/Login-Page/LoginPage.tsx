@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import jpIMG from "../../assets/logo.png";
 import { LayoutComponents } from "../../components/LayoutComponents";
+
+import jpIMG from "../../assets/logo.png";
 
 export const Login = () => {
   const [email, setEmail] = useState("");
@@ -10,7 +11,7 @@ export const Login = () => {
   return (
     <LayoutComponents>
       <form className="login-form">
-        <span className="login-form-tittle">Bem-vindo</span>
+        <span className="login-form-tittle">Bem vindo</span>
         <span className="login-form-tittle">
           <img src={jpIMG} alt="logo" />
         </span>

@@ -59,11 +59,12 @@ html {
   width: 0;
   height: 2px;
   background: rgb(87, 63, 221);
+  transition: all, 0.4s;
   -webkit-transition: all, 0.4s;
   -o-transition: all, 0.4s;
   -moz-transition: all, 0.4s;
 }
-.focus-input::after {
+.focus-input::after{
   font-size: 15px;
   color: #999999;
   line-height: 1.2;
@@ -74,6 +75,7 @@ html {
   top: 16px;
   left: 0px;
   padding-left: 5px;
+  transition: all, 0.4s;
   -webkit-transition: all, 0.4s;
   -o-transition: all, 0.4s;
   -moz-transition: all, 0.4s;
